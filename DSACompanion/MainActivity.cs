@@ -8,12 +8,15 @@ using Android.Support.V4.View;
 using Android.Support.V4.Widget;
 using Android.Support.V7.App;
 using Android.Views;
+using Android.Widget;
 
 namespace DSACompanion
 {
     [Activity(Label = "@string/app_name", Theme = "@style/AppTheme.NoActionBar", MainLauncher = true)]
     public class MainActivity : AppCompatActivity, NavigationView.IOnNavigationItemSelectedListener
     {
+        private AppStorage Storage { get; set; }
+
         protected override void OnCreate(Bundle savedInstanceState)
         {
             base.OnCreate(savedInstanceState);
@@ -31,6 +34,8 @@ namespace DSACompanion
 
             NavigationView navigationView = FindViewById<NavigationView>(Resource.Id.nav_view);
             navigationView.SetNavigationItemSelectedListener(this);
+
+            Storage = new AppStorage(this);
         }
 
         public override void OnBackPressed()
@@ -80,7 +85,9 @@ namespace DSACompanion
             }
             else if (id == Resource.Id.nav_gallery)
             {
-
+                Toast.MakeText(this, Storage.Test, ToastLength.Short).Show();
+                Storage.Test = "Whoosh";
+                Storage.SaveChanges();
             }
             else if (id == Resource.Id.nav_slideshow)
             {
