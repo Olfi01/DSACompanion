@@ -85,9 +85,7 @@ namespace DSACompanion
             }
             else if (id == Resource.Id.nav_gallery)
             {
-                Toast.MakeText(this, Storage.Test, ToastLength.Short).Show();
-                Storage.Test = "Whoosh";
-                Storage.SaveChanges();
+                
             }
             else if (id == Resource.Id.nav_slideshow)
             {
