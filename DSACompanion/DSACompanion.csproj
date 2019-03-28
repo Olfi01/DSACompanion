@@ -123,6 +123,13 @@
   <ItemGroup>
     <AndroidResource Include="Resources\drawable\ic_launcher_foreground_.png" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\DSAWearableCompanion\DSAWearableCompanion\DSAWearableCompanion.csproj">
+      <Project>{78bf8269-6ef5-4da0-ab51-e99ad479452b}</Project>
+      <Name>DSAWearableCompanion</Name>
+      <IsAppExtension>true</IsAppExtension>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it.
     Other similar extension points exist, see Microsoft.Common.targets.
