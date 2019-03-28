@@ -15,8 +15,5 @@ namespace DSACompanion
     public class AppStorage : Storage
     {
         public AppStorage(Context context) : base(context) { }
-
-        [Preference("test", DefaultValue = "Test")]
-        public string Test { get; set; }
     }
 }
