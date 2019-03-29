@@ -55,12 +55,12 @@
     <Reference Include="Mono.Android" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="AppStorage.cs" />
+    <Compile Include="Storage\AppStorage.cs" />
     <Compile Include="MainActivity.cs" />
-    <Compile Include="PreferenceAttribute.cs" />
+    <Compile Include="Storage\PreferenceAttribute.cs" />
     <Compile Include="Resources\Resource.Designer.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Storage.cs" />
+    <Compile Include="Storage\Storage.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\AboutResources.txt" />
@@ -129,6 +129,9 @@
       <Name>DSAWearableCompanion</Name>
       <IsAppExtension>true</IsAppExtension>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable-v21\ic_menu_dies.xml" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it.

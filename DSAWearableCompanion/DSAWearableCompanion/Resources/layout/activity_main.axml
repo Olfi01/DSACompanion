@@ -13,6 +13,13 @@
 		app:boxedEdges="all"
 		android:minWidth="25px"
 		android:minHeight="25px">
+		<TextView
+			android:text="Hello unloaded World!"
+			android:layout_gravity="center_horizontal|bottom"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:id="@+id/text">
+		</TextView>
 		<FrameLayout
 			android:layout_gravity="center_vertical"
 			android:layout_width="fill_parent"

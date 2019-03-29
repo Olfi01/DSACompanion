@@ -9,6 +9,7 @@ using Android.Support.V4.Widget;
 using Android.Support.V7.App;
 using Android.Views;
 using Android.Widget;
+using DSACompanion.Storage;
 
 namespace DSACompanion
 {
@@ -79,9 +80,9 @@ namespace DSACompanion
         {
             int id = item.ItemId;
 
-            if (id == Resource.Id.nav_camera)
+            if (id == Resource.Id.nav_dies)
             {
-                // Handle the camera action
+                
             }
             else if (id == Resource.Id.nav_gallery)
             {

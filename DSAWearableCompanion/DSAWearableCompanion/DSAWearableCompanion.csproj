@@ -53,6 +53,9 @@
     <Compile Include="MainActivity.cs" />
     <Compile Include="Resources\Resource.designer.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Storage\AppStorage.cs" />
+    <Compile Include="Storage\PreferenceAttribute.cs" />
+    <Compile Include="Storage\Storage.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\AboutResources.txt" />

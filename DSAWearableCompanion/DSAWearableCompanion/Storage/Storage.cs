@@ -12,7 +12,7 @@ using Android.Views;
 using Android.Widget;
 using Newtonsoft.Json;
 
-namespace DSACompanion
+namespace DSAWearableCompanion.Storage
 {
     public class Storage
     {

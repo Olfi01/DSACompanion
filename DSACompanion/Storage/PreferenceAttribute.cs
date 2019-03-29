@@ -10,12 +10,12 @@ using Android.Runtime;
 using Android.Views;
 using Android.Widget;
 
-namespace DSACompanion
+namespace DSACompanion.Storage
 {
     [AttributeUsage(AttributeTargets.Property | AttributeTargets.Field, AllowMultiple = false)]
     public class PreferenceAttribute : Attribute
     {
-        public string Key { get; set; }
+        public string Key { get; }
         public object DefaultValue { get; set; }
 
         public PreferenceAttribute(string key)
