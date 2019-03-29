@@ -15,5 +15,8 @@ namespace DSACompanion.Storage
     public class AppStorage : Storage
     {
         public AppStorage(Context context) : base(context) { }
+
+        [Preference("number_of_dies", DefaultValue = 3)]
+        public int NumberOfDies { get; set; }
     }
 }

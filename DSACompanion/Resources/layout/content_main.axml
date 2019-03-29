@@ -6,11 +6,11 @@
     android:layout_height="match_parent"
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
     tools:showIn="@layout/app_bar_main">
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_centerInParent="true"
-        android:text="Hello World!" />
-
+	<FrameLayout android:id="@+id/main_layout"
+		android:layout_height="fill_parent"
+		android:layout_width="fill_parent">
+		<TextView android:text="Hello World"
+			android:layout_height="wrap_content"
+			android:layout_width="wrap_content"></TextView>
+	</FrameLayout>
 </RelativeLayout>

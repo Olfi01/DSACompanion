@@ -4,4 +4,17 @@
   <string name="navigation_drawer_close">Close navigation drawer</string>
   <string name="action_settings">Settings</string>
   <string name="menu_dies">Dies</string>
+  <string-array name="die_numbers_array">
+    <item>1</item>
+    <item>2</item>
+    <item>3</item>
+    <item>4</item>
+    <item>5</item>
+    <item>6</item>
+    <item>7</item>
+    <item>8</item>
+    <item>9</item>
+    <item>10</item>
+  </string-array>
+  <string name="roll_the_dies">Roll the dies!</string>
 </resources>
